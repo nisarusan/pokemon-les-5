@@ -1,8 +1,21 @@
+import java.util.Arrays;
 import java.util.List;
 
 // Los in deze klasse alle foutmeldingen op door (abstracte) klassen met variabelen en methodes te maken en een interface met methodes (en soms een import).
-public class PokemonGymImpl implements PokemonGym {
+public abstract class PokemonGymImpl implements PokemonGym {
+    String type;/*""*/
+    List<String> attacks = Arrays.asList(/*voer de aanvallen hier in*/);
+    String name; /*""*/
 
+    public PokemonGymImpl(String type, List<String> attacks, String name) {
+        this.type = type;
+        this.attacks = attacks;
+        this.name = name;
+    }
+
+    public void food();/*""*/
+    void sound();/*""*/
+    void town();/*""*/
 
     List<Pokemon> pokemons;
 

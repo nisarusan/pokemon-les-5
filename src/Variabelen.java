@@ -5,16 +5,21 @@ import java.util.List;
 // In deze klasse staan een aantal variabelen die in meerdere klassen voorkomen en een aantal variabelen die slechts één keer gebruikt kunnen worden.
 public class Variabelen {
     /*deze komen meerdere keren voor*/
-    type;/*""*/
+    String type;/*""*/
     List<String> attacks = Arrays.asList(/*voer de aanvallen hier in*/);
-    name;/*""*/
+    String name; /*""*/
 
     /*deze variabelen komen eenmaal voor*/
+
+    public Variabelen(String type, List<String> attacks, String name) {
+        this.type = type;
+        this.attacks = attacks;
+        this.name = name;
+    }
+
     List<Pokemon> pokemons;
     int level;
     int hp;
-    food;/*""*/
-    sound;/*""*/
-    town;/*""*/
+
 
 }
